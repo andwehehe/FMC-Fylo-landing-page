@@ -1,5 +1,48 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   BASIC CSS RESET
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "YourFont", system-ui, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'Raleway';
   src: url('./assets/fonts/raleway-v37-latin-regular.woff2');
@@ -29,6 +72,14 @@
 }
 
 @theme {
-  --font-header: Raleway, sans-serif;
-  --font-body: Open-Sans, sans-serif
+  --font-header: "Raleway", sans-serif;
+  --font-body: "Open-Sans", sans-serif;
+  --color-n850: hsl(217, 28%, 15%);
+  --color-n900: hsl(218, 28%, 13%);
+  --color-n950: hsl(216, 53%, 9%);
+  --color-n800: hsl(219, 30%, 18%);
+  --color-t200: hsl(176, 68%, 64%);
+  --color-c500: hsl(198, 60%, 50%);
+  --color-r500: hsl(0, 100%, 63%);
+  --color-neutral: hsl(0, 0%, 100%);
 }
