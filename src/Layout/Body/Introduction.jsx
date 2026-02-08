@@ -1,4 +1,4 @@
-import intro_img from '/src/assets/icons/illustration-intro.png';
+import intro_img from '/src/assets/images/illustration-intro.png';
 
 function Introduction() {
     
@@ -15,14 +15,14 @@ function Introduction() {
                 anywhere.
             </h1>
 
-            <p className='font-body text-neutral text-sm text-center px-4 my-4'>
+            <p className='font-body text-neutral text-sm text-center px-2 my-4'>
                 Fylo stores all your most important files in
                 one secure location. Access them wherever
                 you need, share and collaborate with friends
                 family, and co-workers.
             </p>
 
-            <button className='font-body text-neutral text-sm py-3 px-20 my-2 rounded-4xl bg-t200'>
+            <button className='font-body text-neutral text-sm py-3 px-20 my-2 rounded-4xl bg-t200 cursor-pointer'>
                 Get Started
             </button>
         </article>

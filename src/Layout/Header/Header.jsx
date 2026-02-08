@@ -3,7 +3,7 @@ import logo from '/src/assets/icons/logo.svg';
 function Header() {
 
     return(
-        <header className='flex justify-between items-center'>
+        <header className='flex justify-between items-center px-4 pt-6'>
             <img 
                 src={logo} 
                 alt="logo"
