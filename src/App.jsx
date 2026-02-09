@@ -6,13 +6,13 @@ import mobile_curvy from '/src/assets/icons/bg-curvy-mobile.svg';
 function App() {
 
   return (
-   <main className="relative flex flex-col  w-full h-full bg-n900 z-1">
+   <main className="relative flex flex-col items-center w-full h-full bg-n900 z-1">
       <Header />
       <Body />
       <Footer />
 
       {/* Background */}
-      <div className="absolute flex items-end left-0 top-0 bg-n850 -z-1 w-full h-107">
+      <div className="absolute flex items-end left-0 top-0 bg-n850 -z-1 w-full h-107 max-h-107">
           <img 
               src={mobile_curvy} 
               alt="background" 

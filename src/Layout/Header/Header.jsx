@@ -3,11 +3,14 @@ import logo from '/src/assets/icons/logo.svg';
 function Header() {
 
     return(
-        <header className='flex justify-between items-center px-4 pt-6'>
+        <header className='
+            flex justify-between items-center px-4 pt-6 w-full max-w-2xl
+            md:px-8 md:pt-8 md:max-w-none
+        '>
             <img 
                 src={logo} 
                 alt="logo"
-                className='h-6' 
+                className='h-6 md:h-8' 
             />
             <nav>
                 <ul className='flex gap-5 text-neutral font-header text-sm'>

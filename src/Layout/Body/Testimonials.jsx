@@ -27,7 +27,9 @@ const testimonial_cards = [
 function Testimonials() {
 
     return(
-        <section className='relative flex flex-col items-center gap-6 p-6'>
+        <section className='
+            relative flex flex-wrap items-center gap-6 p-6 mt-16 max-w-lg
+        '>
             <img 
                 src={quote_icon} 
                 alt="quote bg" 
@@ -37,17 +39,33 @@ function Testimonials() {
                 testimonial_cards.map(({ profile_pic, commenter, role, comment }) => {
 
                     return(
-                        <article key={commenter} className='flex flex-col items-start gap-6 p-6 rounded-md bg-n800 shadow-2xl'>
-                            <p className='font-body text-neutral text-[0.65rem] leading-relaxed'>
+                        <article key={commenter} className='
+                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md min-w-full bg-n800 shadow-2xl
+                        '>
+
+                            <p className='
+                                font-body text-neutral text-[0.65rem] leading-relaxed
+                                md:text-sm
+                            '>
                                 {comment}
                             </p>
+
                             <div className='flex justify-end items-center gap-2'>
                                 <img src={profile_pic} alt="profile pic" className='w-8 rounded-full' />
                                 <span>
-                                    <h3 className='font-header font-bold text-neutral text-xs tracking-widest'>{commenter}</h3>
-                                    <p className='font-body text-neutral text-[0.65rem]'>{role}</p>
+                                    <h3 className='
+                                        font-header font-bold text-neutral text-xs tracking-widest
+                                        md:text-xs
+                                    '>
+                                        {commenter}
+                                    </h3>
+
+                                    <p className='font-body text-neutral text-[0.65rem]'>
+                                        {role}
+                                    </p>
                                 </span>
                             </div>
+
                         </article>
                     );
                 })

@@ -33,15 +33,28 @@ const info_list = [
 function InfoPanel() {
 
     return(
-        <section className='flex flex-col justify-center items-center gap-8 text-center px-3 my-16'>
+        <section className='
+            flex flex-wrap justify-center items-center 
+            gap-8 text-center px-3 my-16
+        '>
             {
                 info_list.map(({ img, header, description, key }) => {
                     
                     return(
-                        <article key={key} className='flex flex-col items-center'>
-                            <img src={img} alt={key} className='my-8' />
-                            <h2 className='font-header font-bold text-xl text-neutral mb-2'>{header}</h2>
-                            <p className='font-body text-sm text-neutral'>{description}</p>
+                        <article key={key} className='
+                            flex flex-col items-center flex-1 min-w-xs max-w-sm
+                        '>
+                            <img src={img} alt={key} className='my-8 h-[75px]' />
+                            <h2 className='
+                                font-header font-bold text-xl text-neutral mb-2
+                            '>
+                                {header}
+                            </h2>
+                            <p className='
+                                font-body text-sm text-neutral
+                            '>
+                                {description}
+                            </p>
                         </article>
                     );
                 })

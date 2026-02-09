@@ -2,7 +2,11 @@
 function Promotion() {
 
     return(
-        <article className="flex flex-col mx-3 px-4 py-8 mt-28 bg-n850 text-center rounded-lg drop-shadow-2xl shadow-2xl">
+        <article className="
+            flex flex-col mx-3 px-4 py-8 mt-28 text-center max-w-lg
+            rounded-lg drop-shadow-2xl shadow-2xl bg-n850 
+            md:p-8
+        ">
             <h3 className="font-header font-bold text-neutral text-xl">
                 Get early access today
             </h3>

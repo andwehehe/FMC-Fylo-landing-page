@@ -4,14 +4,17 @@ import arrow_icon from '/src/assets/icons/icon-arrow.svg';
 function ProductDemo() {
 
     return(
-        <article className='flex flex-col items-center gap-4 px-2 py-16'>
+        <article className='flex flex-col items-start gap-4 px-2 py-16 max-w-lg'>
             <img 
                 src={demo_img} 
                 alt="demo" 
-                className='my-8'
+                className='my-8 self-center md:w-xl'
             />
 
-            <h2 className='font-header font-bold text-neutral text-xl w-full'>
+            <h2 className='
+                font-header font-bold text-neutral text-xl w-full
+                md:text-2xl
+            '>
                 Stay productive, wherever you are
             </h2>
 
@@ -26,8 +29,13 @@ function ProductDemo() {
 
             <a 
                 href="https://github.com/andwehehe"
-                className='font-body text-sm text-t200 flex gap-2 items-center self-start py-2 border-b cursor-pointer'
-            >
+                className='
+                    font-body text-sm 
+                    text-t200 flex 
+                    gap-2 items-center 
+                    self-start py-2 
+                    border-b cursor-pointer
+                '>
                 See how Fylo works
                 <img src={arrow_icon} alt="arrow"  className='w-5'/>
             </a>
