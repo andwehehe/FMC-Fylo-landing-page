@@ -16,6 +16,7 @@ function Body() {
 
             flex flex-col items-center
             md:px-6
+            
         ">
             <Introduction />
             <InfoPanel />

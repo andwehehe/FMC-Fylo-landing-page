@@ -80,4 +80,8 @@ ol {
   --color-c500: hsl(198, 60%, 50%);
   --color-r500: hsl(0, 100%, 63%);
   --color-neutral: hsl(0, 0%, 100%);
+
+  /* Breakpoint */
+  --breakpoint-xs: 375px;
+  --breakpoint-2xs: 320px;
 }

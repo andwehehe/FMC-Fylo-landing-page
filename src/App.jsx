@@ -6,7 +6,10 @@ import mobile_curvy from '/src/assets/icons/bg-curvy-mobile.svg';
 function App() {
 
   return (
-   <main className="relative flex flex-col items-center w-full h-full bg-n900 z-1">
+   <main className="
+        relative flex flex-col items-center w-full h-full 
+        bg-n900 z-1 overflow-hidden
+    ">
       <Header />
       <Body />
       <Footer />

@@ -28,29 +28,35 @@ function Footer() {
 
     return(
         <footer className='flex justify-center px-8 p-8 bg-n950 w-full'>
-            <div className='max-w-lg w-full'>
-                <img src={logo} alt="logo" className='py-8'/>
-                <article className='grid md:grid-cols-[55%_40%] grid-row-2 gap-4 gap-x-12'>
-                    {
-                        contacts.map(({ icon, info, key, span }) => {
-                            const rowSpanClass = span === "2" ? "md:row-span-2" : "md:row-span-1";
-                            
-                            return(
-                                <div key={key} className={`flex items-start gap-4 max-w-sm ${rowSpanClass}`}>
-                                    <img src={icon} alt={key} className='py-1.5'/>
-                                    <p className='font-body text-neutral self-center h-full'>
-                                        {info}
-                                    </p>
-                                </div>
-                            );
-                        })
-                    }
+            <div className='
+                max-w-lg w-ful md:max-w-6xl lg:max-w-none
+                lg:flex items-start justify-center
+            '>
+                <article>
+                    <img src={logo} alt="logo" className='py-8'/>
+                    <div className='grid md:grid-cols-[55%_40%] grid-row-2 gap-4 gap-x-12'>
+                        {
+                            contacts.map(({ icon, info, key, span }) => {
+                                const rowSpanClass = span === "2" ? "md:row-span-2" : "md:row-span-1";
+                                
+                                return(
+                                    <div key={key} className={`flex items-start gap-4 max-w-sm ${rowSpanClass}`}>
+                                        <img src={icon} alt={key} className='py-1.5'/>
+                                        <p className='font-body text-neutral self-center h-full'>
+                                            {info}
+                                        </p>
+                                    </div>
+                                );
+                            })
+                        }
+                    </div>
                 </article>
 
-                <article className='my-16 md:flex md:justify-between items-start'>
+                <article className='my-16 md:flex md:gap-32 items-start lg:gap-8 lg:mt-28'>
                     <nav className='
                         flex flex-col gap-8
                         md:flex-row md:gap-24
+                        lg:gap-6
                     '>
                         <ul className='flex flex-col gap-2 font-body text-neutral'>
                             <li>About Us</li>
@@ -66,7 +72,7 @@ function Footer() {
                         </ul>
                     </nav>
 
-                    <nav className='flex justify-center gap-4'>
+                    <nav className='flex justify-center gap-4 lg:flex-col'>
                         {/* facebook logo */}
                         <div className='border-1 border-neutral rounded-full p-2'>
                             <svg 

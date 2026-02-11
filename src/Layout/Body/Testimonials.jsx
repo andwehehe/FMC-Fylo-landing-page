@@ -28,7 +28,7 @@ function Testimonials() {
 
     return(
         <section className='
-            relative flex flex-wrap items-center gap-6 p-6 mt-16 max-w-lg
+            relative flex flex-wrap items-center justify-center gap-6 p-6 mt-16 
         '>
             <img 
                 src={quote_icon} 
@@ -40,7 +40,7 @@ function Testimonials() {
 
                     return(
                         <article key={commenter} className='
-                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md min-w-full bg-n800 shadow-2xl
+                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md min-w-md max-w-lg bg-n800 shadow-2xl 
                         '>
 
                             <p className='
