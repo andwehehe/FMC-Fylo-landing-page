@@ -40,7 +40,8 @@ function Testimonials() {
 
                     return(
                         <article key={commenter} className='
-                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md min-w-md max-w-lg bg-n800 shadow-2xl 
+                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md md:min-w-md max-w-lg bg-n800 shadow-2xl 
+                            2xs:min-w-2xs
                         '>
 
                             <p className='

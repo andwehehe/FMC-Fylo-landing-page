@@ -29,7 +29,7 @@ function Footer() {
     return(
         <footer className='flex justify-center px-8 p-8 bg-n950 w-full'>
             <div className='
-                max-w-lg w-ful md:max-w-6xl lg:max-w-none
+                max-w-lg w-full md:max-w-6xl lg:max-w-none
                 lg:flex items-start justify-center
             '>
                 <article>
@@ -72,7 +72,7 @@ function Footer() {
                         </ul>
                     </nav>
 
-                    <nav className='flex justify-center gap-4 lg:flex-col'>
+                    <nav className='flex justify-center gap-4 lg:flex-col 2xs:my-12 md:my-0'>
                         {/* facebook logo */}
                         <div className='border-1 border-neutral rounded-full p-2'>
                             <svg 

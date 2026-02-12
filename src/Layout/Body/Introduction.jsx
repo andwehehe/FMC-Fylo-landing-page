@@ -10,12 +10,13 @@ function Introduction() {
             <img 
                 src={intro_img} 
                 alt="intro image" 
-                className='my-12 md:w-xl'
+                className='my-12 md:w-xl xl:w-190'
             />
-            
+                          
             <h1 className='
-                font-header font-bold text-neutral text-2xl text-center
+                font-header font-bold text-neutral text-2xl text-center leading-normal
                 md:text-3xl md:max-w-lg
+                xl:text-5xl xl:max-w-4xl
             '>
                 All your files in one secure location, accessible
                 anywhere.
@@ -24,6 +25,7 @@ function Introduction() {
             <p className='
                 font-body text-neutral text-sm text-center px-2 my-4
                 md:text-base md:max-w-lg
+                xl:text-2xl xl:max-w-3xl
             '>
                 Fylo stores all your most important files in
                 one secure location. Access them wherever
@@ -33,8 +35,9 @@ function Introduction() {
 
             <button className='
                 font-body font-bold text-neutral text-sm py-3 px-20 
-                my-2 rounded-4xl bg-t200 cursor-pointer
+                my-2 rounded-4xl bg-t200 cursor-pointer hover:bg-t100
                 md:text-base
+                xl:py-5 xl:px-28 xl:my-4 
             '>
                 Get Started
             </button>

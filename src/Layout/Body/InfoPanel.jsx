@@ -36,6 +36,7 @@ function InfoPanel() {
         <section className='
             flex flex-wrap justify-center items-center 
             gap-8 text-center px-3 my-16
+            lg:my-40 xl:max-w-5xl xl:gap-28
         '>
             {
                 info_list.map(({ img, header, description, key }) => {
@@ -43,15 +44,17 @@ function InfoPanel() {
                     return(
                         <article key={key} className='
                             flex flex-col items-center flex-1 min-w-xs max-w-sm
+                            xl:max-w-lg
                         '>
                             <img src={img} alt={key} className='my-8 h-[75px]' />
                             <h2 className='
                                 font-header font-bold text-xl text-neutral mb-2
+                                xl:text-2xl
                             '>
                                 {header}
                             </h2>
                             <p className='
-                                font-body text-sm text-neutral
+                                font-body text-sm text-neutral  xl:text-lg
                             '>
                                 {description}
                             </p>

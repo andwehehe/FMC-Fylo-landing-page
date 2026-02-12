@@ -84,4 +84,7 @@ ol {
   /* Breakpoint */
   --breakpoint-xs: 375px;
   --breakpoint-2xs: 320px;
+
+  /* BG color */
+    --background-color-t100: hsl(176, 88%, 77%);
 }

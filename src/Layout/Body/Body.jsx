@@ -12,11 +12,11 @@ function Body() {
             before:absolute before:bg-n950 
             before:w-full before:h-1/21 
             before:left-0  before:bottom-0 
-            before:-z-1
+            before:-z-1 w-full
 
             flex flex-col items-center
             md:px-6
-            
+            2xs:max-w-xs xs:max-w-none
         ">
             <Introduction />
             <InfoPanel />
