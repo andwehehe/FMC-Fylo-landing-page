@@ -30,11 +30,11 @@ function Footer() {
         <footer className='flex justify-center px-8 p-8 bg-n950 w-full'>
             <div className='
                 max-w-lg w-full md:max-w-6xl lg:max-w-none
-                lg:flex items-start justify-center
+                lg:flex items-start justify-center xl:justify-between xl:max-w-6xl
             '>
                 <article>
                     <img src={logo} alt="logo" className='py-8'/>
-                    <div className='grid md:grid-cols-[55%_40%] grid-row-2 gap-4 gap-x-12'>
+                    <div className='grid md:grid-cols-[55%_40%] grid-row-2 gap-4 gap-x-12 xl:gap-x-20 xl:gap-y-4'>
                         {
                             contacts.map(({ icon, info, key, span }) => {
                                 const rowSpanClass = span === "2" ? "md:row-span-2" : "md:row-span-1";
@@ -52,11 +52,11 @@ function Footer() {
                     </div>
                 </article>
 
-                <article className='my-16 md:flex md:gap-32 items-start lg:gap-8 lg:mt-28'>
+                <article className='my-16 md:flex md:gap-32 items-start lg:gap-8 lg:mt-28 xl:gap-20'>
                     <nav className='
                         flex flex-col gap-8
                         md:flex-row md:gap-24
-                        lg:gap-6
+                        lg:gap-6 xl:gap-20
                     '>
                         <ul className='flex flex-col gap-2 font-body text-neutral'>
                             <li>About Us</li>
@@ -72,11 +72,11 @@ function Footer() {
                         </ul>
                     </nav>
 
-                    <nav className='flex justify-center gap-4 lg:flex-col 2xs:my-12 md:my-0'>
+                    <nav className='flex justify-center gap-4 lg:flex-col 2xs:my-12 md:my-0 xl:flex-row'>
                         {/* facebook logo */}
-                        <div className='border-1 border-neutral rounded-full p-2'>
+                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
                             <svg 
-                                className='w-6'
+                                className='w-6 cursor-pointer fill-white group-hover:fill-c500'
                                 fill="#ffffff" 
                                 viewBox="0 0 32 32" 
                                 id="Camada_1" 
@@ -101,9 +101,9 @@ function Footer() {
                         </div>
 
                         {/* twitter logo */}
-                        <div className='border-1 border-neutral rounded-full p-2'>
+                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
                             <svg 
-                                className='w-6'
+                                className='w-6 group-hover:fill-c500'
                                 fill="#ffffff" 
                                 viewBox="0 0 256 256" 
                                 id="Flat" 
@@ -118,9 +118,9 @@ function Footer() {
                         </div>
 
                         {/* IG logo */}
-                        <div className='border-1 border-neutral rounded-full p-2'>
+                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
                             <svg 
-                                className='w-6'
+                                className='w-6 group-hover:fill-c500'
                                 fill="#ffffff" 
                                 viewBox="0 0 32 32" 
                                 id="Camada_1" 

@@ -28,40 +28,41 @@ function Testimonials() {
 
     return(
         <section className='
-            relative flex flex-wrap items-center justify-center gap-6 p-6 mt-16 
+            relative flex flex-wrap items-center justify-center gap-6 p-6 mt-16
+            xl:flex-nowrap
         '>
             <img 
                 src={quote_icon} 
                 alt="quote bg" 
-                className='absolute -top-0.5 left-6 w-8'
+                className='absolute -top-0.5 left-6 w-8 xl:w-12 xl:-z-1 xl:-top-1 xl:left-4'
             />
             {
                 testimonial_cards.map(({ profile_pic, commenter, role, comment }) => {
 
                     return(
                         <article key={commenter} className='
-                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md md:min-w-md max-w-lg bg-n800 shadow-2xl 
-                            2xs:min-w-2xs
+                            flex flex-1 flex-col items-start gap-6 p-6 rounded-md  max-w-lg bg-n800 shadow-2xl 
+                            2xs:min-w-2xs md:min-w-md xl:min-w-[22rem] xl:px-8 xl:flex-none xl:w-[5rem]
                         '>
 
                             <p className='
                                 font-body text-neutral text-[0.65rem] leading-relaxed
-                                md:text-sm
+                                md:text-sm xl:text-sm xl:pt-2
                             '>
                                 {comment}
                             </p>
 
                             <div className='flex justify-end items-center gap-2'>
-                                <img src={profile_pic} alt="profile pic" className='w-8 rounded-full' />
+                                <img src={profile_pic} alt="profile pic" className='w-8 rounded-full xl:w-12' />
                                 <span>
                                     <h3 className='
                                         font-header font-bold text-neutral text-xs tracking-widest
-                                        md:text-xs
+                                        md:text-xs xl:text-sm
                                     '>
                                         {commenter}
                                     </h3>
 
-                                    <p className='font-body text-neutral text-[0.65rem]'>
+                                    <p className='font-body text-neutral text-[0.65rem] xl:text-xs'>
                                         {role}
                                     </p>
                                 </span>

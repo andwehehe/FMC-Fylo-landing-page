@@ -5,7 +5,7 @@ function Promotion() {
         <article className="
             flex flex-col mx-3 px-4 py-8 mt-28 text-center max-w-lg
             rounded-lg drop-shadow-2xl shadow-2xl bg-n850 
-            md:p-8 lg:max-w-2xl lg:px-16
+            md:p-8 lg:max-w-2xl lg:px-16 xl:max-w-4xl
         ">
             <h3 className="font-header font-bold text-neutral text-xl lg:text-2xl">
                 Get early access today
@@ -31,7 +31,7 @@ function Promotion() {
                 />
                 <button className="
                     font-header font-bold text-sm text-neutral py-3.5 rounded-full w-full bg-t200
-                    lg:w-xs
+                    lg:w-xs cursor-pointer hover:bg-t100
                 ">
                     Get Started For Free
                 </button>
