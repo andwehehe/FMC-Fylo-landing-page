@@ -74,7 +74,7 @@ function Footer() {
 
                     <nav className='flex justify-center gap-4 lg:flex-col 2xs:my-12 md:my-0 xl:flex-row'>
                         {/* facebook logo */}
-                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
+                        <div className='border-1 border-neutral rounded-full p-2 group cursor-pointer hover:border-c500'>
                             <svg 
                                 className='w-6 cursor-pointer fill-white group-hover:fill-c500'
                                 fill="#ffffff" 
@@ -101,7 +101,7 @@ function Footer() {
                         </div>
 
                         {/* twitter logo */}
-                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
+                        <div className='border-1 border-neutral rounded-full p-2 group cursor-pointer hover:border-c500'>
                             <svg 
                                 className='w-6 group-hover:fill-c500'
                                 fill="#ffffff" 
@@ -118,7 +118,7 @@ function Footer() {
                         </div>
 
                         {/* IG logo */}
-                        <div className='border-1 border-neutral rounded-full p-2 group hover:border-c500'>
+                        <div className='border-1 border-neutral rounded-full p-2 group cursor-pointer hover:border-c500'>
                             <svg 
                                 className='w-6 group-hover:fill-c500'
                                 fill="#ffffff" 
