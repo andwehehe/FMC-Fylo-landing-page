@@ -2,6 +2,7 @@ import Header from "./Layout/Header/Header";
 import Body from "./Layout/Body/Body";
 import Footer from "./Layout/Footer/Footer";
 import mobile_curvy from '/src/assets/icons/bg-curvy-mobile.svg';
+// import desktop_curvy from '/src/assets/icons/bg-curvy-desktop.svg';
 
 function App() {
 
