@@ -28,7 +28,7 @@ function App() {
                 <img 
                     src={desktop_curvy} 
                     alt="background" 
-                    className='w-full bg-n850 relative -bottom-47'
+                    className='w-full bg-n850 relative -bottom-48'
                 />
             </div>
         </main>
