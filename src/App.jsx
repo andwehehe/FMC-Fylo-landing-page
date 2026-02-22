@@ -2,12 +2,9 @@ import Header from "./Layout/Header/Header";
 import Body from "./Layout/Body/Body";
 import Footer from "./Layout/Footer/Footer";
 import mobile_curvy from '/src/assets/icons/bg-curvy-mobile.svg';
-import { useState } from "react";
-// import desktop_curvy from '/src/assets/icons/bg-curvy-desktop.svg';
+import desktop_curvy from '/src/assets/icons/bg-curvy-desktop.svg';
 
 function App() {
-
-    const [ isMobile, setIsMobile ] = useState(false);
 
     return (
         <main className="
@@ -19,11 +16,19 @@ function App() {
             <Footer />
 
             {/* Background */}
-            <div className="absolute flex items-end left-0 top-0 bg-n850 -z-1 w-full h-107 max-h-107">
+            <div className="absolute flex items-end left-0 top-0 bg-n850 -z-1 w-full h-107 max-h-107 block md:hidden">
                 <img 
                     src={mobile_curvy} 
                     alt="background" 
                     className='w-full bg-n850'
+                />
+            </div>
+
+            <div className="absolute flex items-end left-0 top-0 bg-n850 -z-1 w-full h-107 max-h-107 hidden md:block">
+                <img 
+                    src={desktop_curvy} 
+                    alt="background" 
+                    className='w-full bg-n850 relative -bottom-47'
                 />
             </div>
         </main>
